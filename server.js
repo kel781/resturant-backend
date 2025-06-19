@@ -25,7 +25,7 @@ app.use('/api/dishes', dishRoutes);
 
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://knjuguna905:a5VmOA6g6LTVsviG@cluster0.3okpbus.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log('MongoDB connected successfully!'); // This confirms connection
     // Start the server ONLY if MongoDB connects successfully
